@@ -1,0 +1,44 @@
+.navbar {
+	position: relative;
+}
+
+.form-inline {
+	padding-left: 62.5rem;
+}
+
+article {
+	padding: 2rem 5rem;
+}
+
+ul {
+	border: 2px solid #448AFF;
+	padding: 1rem;
+}
+
+li {
+	padding: 0.4rem;
+	border: 1px solid #212121;
+	border-bottom-width: 0;
+}
+
+li:last-child {
+	border-bottom-width: 1px; 
+}
+
+ #page-preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      z-index: 100500;
+    }
+
+#page-preloader .spinner {
+    width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0%;
+      background: url('../images/preloader.gif') no-repeat center center;
+    }
