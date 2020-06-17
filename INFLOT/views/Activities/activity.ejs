@@ -1,0 +1,28 @@
+<%- include("../partials/"+ lang + "/SubPages/PagesTitle"); -%>
+<title><%=activity.title%></title>
+<%- include("../partials/"+ lang + "/SubPages/PagesNavbar"); -%>
+
+<article class="white-section">
+    <h2><%= activity.secondHeader %></h2>
+    <hr>
+    <p><%= activity.firstParagraph %></p>
+    <img src=<%= activity.imgSource %> alt="Image">
+    <p><%= activity.secondParagraph%> </p> <h3><%=activity.thirdHeader%></h3>
+    <ul>
+        <% activity.listItems.forEach((item)=>{%>
+        <li><%= item %></li>
+        <%})%>
+    </ul>
+    <hr>
+    <p><%=activity.thirdParagraph%>
+        <%=activity.phoneNumber%>
+        <%=activity.emailTextOne%>
+        <a href=<%=activity.email%>>
+            <%=activity.emailTextTwo%>
+        </a></p>
+
+    <button type="submit" class="btn btn-outline-primary main">На Главную</button>
+    <button type="submit" class="btn btn-outline-primary prev">Вернуться к Предыдущей Странице</button>
+
+</article>
+<%- include("../partials/"+ lang + "/SubPages/PagesFooter"); -%>

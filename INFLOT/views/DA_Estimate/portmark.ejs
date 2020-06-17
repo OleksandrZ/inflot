@@ -1,0 +1,14 @@
+<%- include("../partials/"+ lang + "/SubPages/PagesTitle"); -%>
+<title><%=title %></title>
+<%- include("../partials/"+ lang + "/SubPages/PagesNavbar"); -%>
+<article class="white-section">
+  <h2><%=secondHeader %></h2>
+  <hr>
+  <img src=<%=imgSource%> alt="Mark Of Herson Sea Port">
+  <p>Для получения более подробной информации обращайтесь, пожалуйста,
+    в <a href="/ports/kherson"><%=linkText %></a></p>
+  <button type="submit" class="btn btn-outline-primary main">На Главную</button>
+  <button type="submit" class="btn btn-outline-primary prev">Вернуться к Предыдущей Странице</button>
+
+</article>
+<%- include("../partials/"+ lang + "/SubPages/PagesFooter"); -%>
